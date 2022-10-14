@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sporticise/ui/awal.dart';
+import 'package:sporticise/ui/landing_page.dart';
 
 void main() {
   runApp(const MyApp());
