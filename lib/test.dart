@@ -25,7 +25,6 @@ class MyStatelessWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center, // this is to center both
@@ -48,7 +47,6 @@ class MyStatelessWidget extends StatelessWidget {
           )
         ],
       ),
-    ),
     );
   }
 }

@@ -1,26 +1,20 @@
-import "package:flutter/cupertino.dart";
 import 'package:flutter/material.dart';
 import 'awal.dart';
 
-// ignore: must_be_immutable
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
 
-
-  MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
+@override
 Widget build(BuildContext context) {
   return Container(
     //Gambar awal
     constraints: const BoxConstraints.expand(),
     decoration: const BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage("assets/images/awal.jpg"), fit: BoxFit.cover)),
+      image: DecorationImage(
+        image: AssetImage("assets/images/awal.jpg"), 
+        fit: BoxFit.cover,
+      )
+    ),
     child: Scaffold(
       backgroundColor: Colors.transparent,
       body: Center(
@@ -63,7 +57,7 @@ Widget build(BuildContext context) {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (_) => AwalScreen())
+                            Navigator.push(context, MaterialPageRoute(builder: (_) => const AwalScreen())
                             );},
                           child: const Text('Explore Now'), 
                         ),
