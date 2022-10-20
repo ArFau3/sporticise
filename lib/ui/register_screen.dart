@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:sporticise/ui/awal.dart';
 
 
-class LoginScreen extends StatefulWidget{
-  const LoginScreen({super.key});
+class RegisterScreen extends StatefulWidget{
+  const RegisterScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<RegisterScreen> createState() => _RegisterScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _RegisterScreenState extends State<RegisterScreen> {
   // ignore: non_constant_identifier_names
   bool lihat_pass = true;
 
@@ -162,7 +162,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (_) => const AwalScreen()));
                     },
-                    child: const Text('Register'), 
+                    child: const Text('Login'), 
                   ),                      
               ),
               //END Tombol Buat akun 

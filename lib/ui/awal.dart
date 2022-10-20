@@ -1,7 +1,8 @@
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:sporticise/ui/landing_page.dart';
+import 'package:sporticise/ui/login_screen.dart';
+import 'package:sporticise/ui/register_screen.dart';
 
 
 class AwalScreen extends StatelessWidget {
@@ -34,7 +35,7 @@ Widget build(BuildContext context) {
                 ),
               ),
               //END logo sporticise
-              //Tombol Explore
+              //Tombol Buat Akun
               Container(
                 margin: const EdgeInsets.only(top: 30),
                 height: 40,
@@ -42,7 +43,7 @@ Widget build(BuildContext context) {
                     border: Border.all(
                       color: Colors.black,
                       width: 1.3,
-                      style: BorderStyle.solid
+                      style: BorderStyle.none
                     ), //Border.all
  
                     borderRadius: BorderRadius.circular(15),
@@ -51,7 +52,7 @@ Widget build(BuildContext context) {
                       BoxShadow(
                         color: Colors.black,
                         offset: Offset(
-                          4.0,
+                          2.0,
                           4.0,
                         ),
                         blurRadius: 10.0,
@@ -76,12 +77,12 @@ Widget build(BuildContext context) {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (_) => const AwalScreen()));
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => const RegisterScreen()));
                     },
                     child: const Text('Buat Akun'), 
                   ),                      
               ),
-              //END Tombol Explore 
+              //END Tombol Buat akun 
               //Kata Atau
               Container(
                 padding: const EdgeInsets.only(top: 35),
@@ -187,7 +188,7 @@ Widget build(BuildContext context) {
                       text: 'login',
                       style: const TextStyle(color: Colors.blue, fontSize: 14),
                       recognizer: TapGestureRecognizer()
-                        ..onTap = () { Navigator.push(context, MaterialPageRoute(builder: (_) => const MyHomePage()));
+                        ..onTap = () { Navigator.push(context, MaterialPageRoute(builder: (_) => const LoginScreen()));
                       },
                     ),
                   ],
